@@ -1,0 +1,23 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "robo boy",
+      "intents": [
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.HelpIntent",   "samples": [] },
+        { "name": "AMAZON.StopIntent",   "samples": [] },
+        { "name": "AMAZON.FallbackIntent","samples":[] },
+        {
+          "name": "ChatIntent",
+          "slots": [{ "name": "query", "type": "AMAZON.SearchQuery" }],
+          "samples": [
+            "ask robo boy to {query}",
+            "robo boy tell me {query}",
+            "robo boy {query}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
