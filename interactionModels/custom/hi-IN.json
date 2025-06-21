@@ -1,38 +1,24 @@
 {
   "interactionModel": {
     "languageModel": {
+      "invocationName": "robo boy",
       "intents": [
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.HelpIntent",   "samples": [] },
+        { "name": "AMAZON.StopIntent",   "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
+        { "name": "AMAZON.FallbackIntent", "samples": [] },
         {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
-          "slots": [
-            {
-              "name": "query",
-              "type": "AMAZON.Person"
-            }
-          ],
           "name": "ChatIntent",
+          "slots": [{ "name": "query", "type": "AMAZON.SearchQuery" }],
           "samples": [
-            "ask robo boy {query}"
+            "पूछो robo boy {query}",
+            "robo boy मुझे बताओ {query}",
+            "मुझे robo boy से {query} बताओ"
           ]
         }
       ],
-      "types": [],
-      "invocationName": "robo boy"
+      "types": []
     }
   }
 }
