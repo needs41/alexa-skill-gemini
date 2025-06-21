@@ -27,7 +27,7 @@
           ],
           "name": "ChatIntent",
           "samples": [
-            "{query}"
+            "ask robo boy {query}"
           ]
         }
       ],
